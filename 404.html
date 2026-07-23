@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 — 页面不存在 | NexaAI</title>
+<link rel="stylesheet" href="assets/css/main.css">
+<style>
+  #error-page { text-align:center; padding:120px 20px; }
+  #error-page h1 { font-size:6rem; color:var(--cyan); text-shadow:0 0 40px var(--cyan); margin-bottom:16px; }
+  #error-page p  { color:var(--muted); margin-bottom:32px; }
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div>
+<div id="cursor-trail"></div>
+<canvas id="particles-canvas"></canvas>
+<nav>
+  <div class="logo">⚡ NexaAI</div>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home" class="active">首页</a></li>
+    <li><a href="#" data-page="about">关于我们</a></li>
+    <li><a href="#" data-page="products">产品方案</a></li>
+    <li><a href="#" data-page="news">新闻动态</a></li>
+    <li><a href="#" data-page="contact">联系我们</a></li>
+  </ul>
+</nav>
+<div id="home" class="page active"></div>
+<div id="about" class="page"></div>
+<div id="products" class="page"></div>
+<div id="news" class="page"></div>
+<div id="contact" class="page"></div>
+
+<div id="error-page">
+  <h1>404</h1>
+  <p>页面不存在或已被移除</p>
+  <a href="#" data-page="home" class="btn"><span>返回首页</span></a>
+</div>
+
+<script src="assets/js/cursor.js"></script>
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/neon-effects.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
